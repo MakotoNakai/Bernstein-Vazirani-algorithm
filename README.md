@@ -20,7 +20,7 @@ This algorithm can be used to figure out <img src="https://latex.codecogs.com/gi
 A hadamard gate is something which perform the following computation.  
 <img src="https://latex.codecogs.com/gif.latex?|x\rangle&space;\xrightarrow{H}&space;\frac{1}{\sqrt{2^n}}\sum_{y=0}^{2^n-1}&space;(-1)^{x\cdot&space;y}|y\rangle" title="|x\rangle \xrightarrow{H} \frac{1}{\sqrt{2^n}}\sum_{y=0}^{2^n-1} (-1)^{x\cdot y}|y\rangle" />  
 
-This is the process to get s.   I get this explanation from J.Du & R.Han(2000)(https://arxiv.org/abs/quant-ph/0012114).  
+This is the process to get a.   I get this explanation from J.Du & R.Han(2000)(https://arxiv.org/abs/quant-ph/0012114).  
 <img src="https://latex.codecogs.com/gif.latex?(|0\rangle)^{n}|1\rangle&space;\xrightarrow{H(n&plus;1)}\frac{1}{\sqrt{2^n}}&space;\sum_{x=0}^{2^n-1}&space;|x\rangle&space;\otimes&space;\frac{|0\rangle-|1\rangle}{\sqrt{2}}" title="(|0\rangle)^{n}|1\rangle \xrightarrow{H(n+1)}\frac{1}{\sqrt{2^n}} \sum_{x=0}^{2^n-1} |x\rangle \otimes \frac{|0\rangle-|1\rangle}{\sqrt{2}}" />  
 <img src="https://latex.codecogs.com/gif.latex?\xrightarrow{U_f}&space;\frac{1}{\sqrt{2^n}}\sum_{x=0}^{2^n-1}&space;(-1)^{s\cdot&space;x}|x\rangle&space;\otimes&space;\frac{|0\rangle&space;-&space;|1\rangle}{\sqrt{2}}" title="\xrightarrow{U_f} \frac{1}{\sqrt{2^n}}\sum_{x=0}^{2^n-1} (-1)^{s\cdot x}|x\rangle \otimes \frac{|0\rangle - |1\rangle}{\sqrt{2}}" />  
 <img src="https://latex.codecogs.com/gif.latex?\xrightarrow{H^{(n)}}&space;\frac{1}{\sqrt{2^n}}\sum_{x=0}^{2^n-1}\sum_{y=0}^{2^n-1}&space;(-1)^{s\cdot&space;x&space;&plus;&space;x\cdot&space;y}|y\rangle&space;\otimes&space;\frac{|0\rangle&space;-&space;|1\rangle}{\sqrt{2}}" title="\xrightarrow{H^{(n)}} \frac{1}{\sqrt{2^n}}\sum_{x=0}^{2^n-1}\sum_{y=0}^{2^n-1} (-1)^{s\cdot x + x\cdot y}|y\rangle \otimes \frac{|0\rangle - |1\rangle}{\sqrt{2}}" />  
@@ -68,6 +68,10 @@ Here is the result on the QASM simulator.
 ![screen shot 2019-01-07 at 5 43 02 pm](https://user-images.githubusercontent.com/45162150/50757791-beb4cd00-12a3-11e9-94f2-697ea3e3843a.png)  
 
 And Here is the result on a real device (ibmq_20_tokyo).  
+![screen shot 2019-01-07 at 5 47 18 pm](https://user-images.githubusercontent.com/45162150/50758053-67fbc300-12a4-11e9-8117-7497c9ec6684.png)  
+
+## Reference  
+J Du and R Han(2001) Implementation of a quantum algorithm to solve the Bernstein-Vazirani parity problem without entanglement on an ensemble quantum computer Phys. Rev. A 64, 042306
 
 
 
