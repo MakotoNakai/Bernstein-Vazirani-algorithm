@@ -65,5 +65,9 @@ for j in range(cn):
 ## Result
 
 Here is the result on the QASM simulator.  
+![screen shot 2019-01-07 at 5 43 02 pm](https://user-images.githubusercontent.com/45162150/50757791-beb4cd00-12a3-11e9-94f2-697ea3e3843a.png)  
+
+And Here is the result on a real device (ibmq_20_tokyo).  
+
 
 
